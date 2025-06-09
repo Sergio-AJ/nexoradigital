@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiénes somos - Nexora Digital</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Encabezado -->
+    <header>
+        <a href="index.html">
+            <div class="logo"><img src="./img/X.png"></div>
+        </a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="quienes-somos.html">Quienes somos</a></li>
+                <li><a href="acerca-de.html">Acerca de</a></li>
+                <li><button class="BtnMenu"><a href="log-in.html">Login</a></button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sección Sobre Nexora Digital -->
+    <section class="services">
+        <h1 class="yeseva-one-regular">Sobre Nexora Digital</h1>
+
+        <!-- Detalle de la Empresa -->
+        <div class="service-item">
+            <div class="service-image">
+                <img src="./img/X blanco.png" alt="Nexora Digital" class="banner">
+            </div>
+            <div class="service-content">
+                <h2>Tu aliado en informática y tecnología en Zaragoza</h2>
+                <p>Nexora Digital es una empresa especializada en soluciones de informática y tecnología con sede en
+                    Zaragoza, España, cuya historia comenzó en 2022 como un ambicioso proyecto de un grupo de
+                    estudiantes de Formación Profesional.
+                </p>
+                <br>
+                <p>
+                    Lo que inicialmente era un plan de empresa diseñado como
+                    ejercicio académico pronto se convirtió en algo más: los fundadores, motivados por su pasión por la
+                    tecnología y su visión de transformar el panorama digital local, decidieron dar el salto y convertir
+                    su idea en una realidad tangible.
+                </p>
+                <br>
+                <p>
+                    Con mucho esfuerzo, largas noches de planificación y un enfoque innovador, lanzaron Nexora Digital ese mismo año, apostando por ofrecer servicios que combinaran
+                    creatividad y excelencia técnica. Desde entonces, la empresa ha crecido de manera sorprendente,
+                    ganándose un lugar destacado en la comunidad de Aragón gracias a su compromiso con las necesidades
+                    de sus clientes, su capacidad para adaptarse a los retos tecnológicos y su dedicación a impulsar el
+                    éxito de negocios tanto locales como internacionales.
+                </p>
+                <br>
+                <p>
+                    Hoy, Nexora Digital es reconocida en la región
+                    como un referente en soluciones digitales, con un equipo que no solo domina la tecnología, sino que
+                    también entiende el valor de conectar con las personas y sus proyectos.
+                </p>
+            </div>
+        </div>
+
+        <!-- Ubicación con iframe -->
+        <div class="location">
+            <h2>Nuestra ubicación en Zaragoza</h2>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d745.4291824767373!2d-0.8948127239862678!3d41.64025399357428!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDHCsDM4JzI0LjkiTiAwwrA1MyczNi45Ilc!5e0!3m2!1ses!2ses!4v1744033468870!5m2!1ses!2ses"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+        <br><br>
+        <!-- Formulario de Contacto -->
+        <div class="contact-form">
+            <h2>Formulario de Contacto</h2>
+            <form action="mailto:info@nexoradigital.com" method="post" enctype="text/plain">
+                <label for="nombre">Nombre:</label><br>
+                <input type="text" id="nombre" name="nombre" required><br><br>
+
+                <label for="email">Correo Electrónico:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="mensaje">Mensaje:</label><br>
+                <textarea id="mensaje" name="mensaje" rows="5" required></textarea><br><br>
+
+                <input type="submit" value="Enviar" class="botones-verdes">
+                <input type="reset" value="Borrar" class="botones-negros">
+            </form>
+        </div>
+    </section>
+</body>
+<!-- Footer -->
+<footer class="pie-de-pagina">
+    <p>Nexora Digital © 2022. All rights reserved.</p>
+</footer>
+
+</html>

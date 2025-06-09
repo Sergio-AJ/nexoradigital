@@ -1,0 +1,342 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    color: #333;
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Encabezado */
+header {
+    background-color: #59ff72;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    height:100px;
+    width:100px;
+    margin-top:0px;
+}
+.logo img{
+    width:100%;
+    height:100%
+}
+
+nav ul {
+    display: flex;
+    align-items: center; /* Esto alinea los elementos de la lista, incluido el botón */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+nav li{
+    margin-right:20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+}
+.BtnMenu{
+    display: inline-flex;
+    align-items: center; /* Centra el texto verticalmente dentro del botón */
+    padding: 8px 15px; /* Ajusta el padding para que coincida con el diseño */
+    margin: 0; /* Elimina márgenes por defecto que puedan desalinearlo */
+    border: none; /* Opcional, ajusta según tu diseño */
+    background-color:black; /* Cambia el color según tu diseño */
+    border-radius:5px;
+}
+.BtnMenu:hover{
+    background-color:rgb(53, 53, 53);
+
+}
+.BtnMenu a{
+    text-decoration:none;
+    color:white;
+}
+
+/* Sección Hero */
+.hero {
+    padding: 40px 20px;
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.hero button {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Imagen de fondo */
+.hero-image {
+    width: 100%;
+    height: auto; /* El contenedor se ajusta a la altura de la imagen */
+    overflow: hidden; /* Oculta las partes que se desbordan, si las hay */
+    text-align: center; /* Centra la imagen si es más pequeña que el contenedor */
+}
+
+.hero-image img {
+    width: auto; /* Mantiene el ancho original de la imagen */
+    height: auto; /* Mantiene la altura original de la imagen */
+    max-width: 100%; /* Asegura que no se desborde del contenedor */
+    display: inline-block; /* Permite centrar la imagen */
+    border-radius:5px;
+}
+
+/* Sección de servicios */
+.services {
+    padding: 40px 20px;
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex:1;
+}
+.services h1{
+    font-size:80px;
+    padding:50px;
+}
+
+.services h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+.service-cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items:stretch;
+}
+
+.card {
+    width: 30%; /* Ancho uniforme para todas las tarjetas */
+    display: flex; /* Usamos flexbox para alinear el contenido dentro de la tarjeta */
+    flex-direction: column; /* Alinea los elementos verticalmente */
+    text-align: center;
+    background-color: #fff; /* Fondo blanco para las tarjetas (opcional) */
+    border-radius: 8px; /* Bordes redondeados (opcional) */
+}
+
+.card-image {
+    width: 100%;
+    height: 150px; /* Altura fija para todas las imágenes */
+    display: flex; /* Usamos flexbox para centrar la imagen */
+    align-items: center; /* Centra verticalmente */
+    justify-content: center; /* Centra horizontalmente */
+    overflow: hidden; /* Oculta el desbordamiento */
+    border-radius:5px;
+}
+.card-image img {
+    width: auto; /* Mantiene el ancho original de la imagen */
+    height: auto; /* Mantiene la altura original de la imagen */
+    max-width: 100%; /* Asegura que no se desborde del contenedor */
+    display: inline-block; /* Permite centrar la imagen */
+    border-radius:5px;
+}
+
+.card h3 {
+    font-size: 20px;
+    margin: 10px 15px; /* Margen interno para el título */
+}
+
+.card p {
+    font-size: 14px;
+    margin: 0 15px 15px 15px; /* Margen interno para el párrafo */
+    flex-grow: 1; /* Permite que el párrafo ocupe el espacio restante */
+}
+.service-content{
+padding:20px;
+}
+.service-content li{
+    text-decoration:none;
+
+}
+.service-content button{
+    margin-top:20px;
+    margin-bottom:20px;
+}
+.service-image img{
+    border-radius:5px;
+}
+
+/* Sección Nuestra historia */
+.history {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 20px;
+}
+
+.history-content {
+    width: 50%;
+}
+
+.history-content h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.history-content p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.history-content h4 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.history-content button {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.history-image {
+    width: 45%;
+    height: 300px; /* Altura fija para el contenedor */
+    overflow: hidden; /* Oculta las partes que se desbordan */
+    border-radius:5px;
+}
+
+.history-image img {
+    width: 100%; /* Ocupa todo el ancho del contenedor */
+    height: 100%; /* Ocupa toda la altura del contenedor */
+    object-fit: cover; /* La imagen se escala para cubrir todo el div, recortando si es necesario */
+    object-position: center; /* Centra la imagen dentro del div */
+    border-radius:5px;
+}
+
+/* Botones */
+.botones-negros{
+    border-radius:5px;
+    background-color:black;
+    color:white;
+    width:150px;
+    height:40px;
+    border:0px solid;
+}
+.botones-verdes{
+    border-radius:5px;
+    background-color:#59ff72;
+    color:rgb(0, 0, 0);
+    width:150px;
+    height:40px;
+    border:0px solid;
+}
+.botones-negros:hover{
+    background-color:rgb(53, 53, 53);
+}
+.botones-verdes:hover{
+   background-color:#50d764;
+}
+.botones-negros a{
+    text-decoration:none;
+    color:white;
+}
+.botones-verdes a{
+    text-decoration:none;
+    color:black;
+}
+
+/* Mapa */
+.location {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.location h2 {
+    margin-bottom: 15px;
+}
+
+iframe {
+    max-width: 100%; /* Para que sea responsive */
+}
+/* Formulario */
+#formulario{
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #c6ffce;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.form-group, .form-options{
+    text-align:left;
+}
+.pie-de-pagina{
+    background-color:black;
+    height:100px;
+    text-align: center;
+    padding: 20px;
+}
+.pie-de-pagina p{
+    color:white;
+  
+}
+/* GOOGLE FONTS */
+.yeseva-one-regular {
+    font-family: "Yeseva One", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+.formulario-contacto {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+.formulario-contacto form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    gap: 15px;
+}
+
+.formulario-contacto input,
+.formulario-contacto textarea {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%; 
+    max-width: 500px; 
+    box-sizing: border-box;
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marketing Digital y SEO - Nexora Digital</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Encabezado -->
+    <header>
+        <a href="index.html">
+            <div class="logo"><img src="./img/X.png"></div>
+        </a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="quienes-somos.html">Quienes somos</a></li>
+                <li><a href="acerca-de.html">Acerca de</a></li>
+                <li><button class="BtnMenu"><a href="log-in.html">Login</a></button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sección de Marketing Digital y SEO -->
+    <section class="services">
+        <h1 class="yeseva-one-regular">Marketing Digital & SEO</h1>
+
+        <!-- Detalle del Servicio -->
+        <div class="service-item">
+            <div class="service-image">
+                <img src="./img/seo.jpg" alt="Marketing Digital y SEO" class="banner">
+            </div>
+            <div class="service-content">
+                <h2>Estrategias de Marketing Digital y SEO</h2>
+                <p>En Nexora Digital te ayudamos a posicionar tu negocio en el mundo digital con estrategias efectivas de marketing y optimización SEO. Nos especializamos en:</p>
+                <br>
+                <ul>
+                    <p>Análisis y optimización de palabras clave</p>
+                    <p>Creación de contenido estratégico para mejorar tu visibilidad</p>
+                    <p>Gestión de campañas publicitarias en Google Ads y redes sociales</p>
+                    <p>Optimización técnica de tu sitio web (SEO On-Page)</p>
+                    <p>Estrategias de link building para aumentar tu autoridad online</p>
+                </ul>
+                <br>
+                <p>Nuestro equipo de especialistas trabaja para incrementar tu presencia en los motores de búsqueda, atraer tráfico de calidad y convertir visitantes en clientes, maximizando el retorno de tu inversión.</p>
+                <button class="botones-verdes"><a href="cita.html">Pedir cita</a></button>
+            </div>
+        </div>
+    </section>
+ <!-- Sección de Solicitud de Asesoría -->
+    <section class="services">
+        <h1 class="yeseva-one-regular">Solicitar Asesoría</h1>
+
+        <!-- Div que contiene el formulario -->
+        <div class="formulario-contacto" class="service-item login-form">
+            <div class="service-content">
+                <h2>Agenda tu cita</h2>
+                <form id="formCita">
+                    <input type="text" name="nombre" placeholder="Tu nombre completo" required>
+                    <input type="email" name="email" placeholder="Tu correo" required>
+                    <input type="datetime-local" name="fecha" required>
+                    <textarea name="motivo" placeholder="Motivo de la cita" required></textarea>
+                    <button type="submit" class="botones-negros">Pedir cita</button>
+                  </form>
+                  <div id="mensajeCita"></div>
+            </div>
+        </div>
+    </section>
+</body>
+<!-- Footer -->
+<footer class="pie-de-pagina">
+    <p>Nexora Digital © 2022. All rights reserved.</p>
+</footer>
+</html>
